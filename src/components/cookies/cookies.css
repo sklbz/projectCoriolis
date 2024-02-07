@@ -1,0 +1,22 @@
+.cookie {
+  box-shadow: 0 0 5px 5px #000;
+  width: 80vw;
+  height: 50px;
+  background: var(--qwik-dark-background);
+  display: flex;
+  flex-direction: row;
+}
+
+.cookie-container{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 80px;
+}
+
+.cookie > button {
+  height: 10px;
+}
