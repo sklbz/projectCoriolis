@@ -6,7 +6,7 @@ import { useLocalStorage } from '~/hooks/useLocalStorage';
 export default component$(() => {
   useStylesScoped$(Style);
   const [value, setValue$] = useLocalStorage("name", "Guest");
-  
+
   return (
     <>
       <h1>Money Transfer. Faster. More secure.</h1>
