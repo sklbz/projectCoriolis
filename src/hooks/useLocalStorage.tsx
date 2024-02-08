@@ -1,10 +1,10 @@
 import type { QRL} from "@builder.io/qwik";
-import { $, useStore } from "@builder.io/qwik";
+import { $, useStore, useTask$ } from "@builder.io/qwik";
 
   export function useLocalStorage(key: string, initialState: any): [any, QRL<(value: any) => void>]  {
     const store = useStore({ value: initialState });
 
-    useClientEffect$(() => {
+    useTask$(() => {
       try {
         // Get from local storage by key
         const item = window.localStorage.getItem(key);
