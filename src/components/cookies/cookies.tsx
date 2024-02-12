@@ -15,8 +15,10 @@ export default component$(() => {
             <p>
             Si vous acceptez les cookies, nous les utiliserons pour améliorer votre expérience et permettre à nos partenaires de vous présenter des publicités personnalisées lorsque vous visitez d'autres sites.
             </p>
+            <div class="btns">
             <button onClick$={() => modalVisible.value = false}> Accepter </button>
             <button onClick$={() => modalVisible.value = false}> Refuser </button>
+            </div>
           </div>
         </div>
       )}

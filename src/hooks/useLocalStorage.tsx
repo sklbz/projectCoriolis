@@ -1,5 +1,6 @@
 import type { QRL} from "@builder.io/qwik";
 import { $, useStore, useTask$ } from "@builder.io/qwik";
+import { time } from "console";
 
   export function useLocalStorage(key: string, initialState: any): [any, QRL<(value: any) => void>]  {
     const store = useStore({ value: initialState });
