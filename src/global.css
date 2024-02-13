@@ -29,11 +29,12 @@ html {
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  line-height: inherit;
   background: var(--qwik-dark-background);
   color: var(--qwik-dark-text);
+  line-height: inherit;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .fira-mono-regular {
