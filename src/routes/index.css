@@ -1,3 +1,36 @@
 section {
   min-height: 100vh;
 }
+
+.main-title {
+  animation: color-change 10s infinite ease;
+  background: linear-gradient(to right, var(--color-1), var(--color-2));
+  height: 3.5rem;
+  background-clip: text;
+  color: var(--test-var);
+}
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    height: 5.3rem;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    --color-1: #f00;
+    --color-2: hsla(30, 100%, 50%, 1);
+  }
+  33% {
+    --color-1: #0f0;
+    --color-2: hsl(150, 100%, 50%);
+  }
+  66% {
+    --color-1: #00f;
+    --color-2: hsl(290, 100%, 50%);
+  }
+  100% {
+    --color-1: #f00;
+    --color-2: hsla(30, 100%, 50%, 1);
+  }
+}

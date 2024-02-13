@@ -12,7 +12,7 @@ export default component$(() => {
 
   return (
     <>
-      <h1>Money Transfer. Faster. More secure.</h1>
+      <h1 class="main-title">Money Transfer. Faster. More secure.</h1>
       <section></section>
       <button onClick$={() => {
           localStorage.setItem("theme", "hello")
