@@ -3,11 +3,11 @@ section {
 }
 
 .main-title {
-  animation: color-change 10s infinite ease;
-  background: linear-gradient(to right, var(--color-1), var(--color-2));
+  //animation: color-change 10s infinite ease;
+  background: linear-gradient(to right, hsl(var(--main-title-hue-left), 100%, 50%), hsl(var(--main-title-hue-right), 100%, 50%));
   height: 3.5rem;
   background-clip: text;
-  color: var(--test-var);
+  color: transparent;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,18 +19,26 @@ section {
 @keyframes color-change {
   0% {
     --color-1: #f00;
-    --color-2: hsla(30, 100%, 50%, 1);
+    --color-2: hsl(30, 100%, 50%);
+    --main-title-hue-left: 0;
+    --main-title-hue-right: 30;
   }
   33% {
     --color-1: #0f0;
     --color-2: hsl(150, 100%, 50%);
+    --main-title-hue-left: 120;
+    --main-title-hue-right: 150;
   }
   66% {
     --color-1: #00f;
     --color-2: hsl(290, 100%, 50%);
+    --main-title-hue-left: 260;
+    --main-title-hue-right: 290;
   }
   100% {
-    --color-1: #f00;
+    --color-1: hsl(0, 100%, 50%);
     --color-2: hsla(30, 100%, 50%, 1);
+    --main-title-hue-left: 357;
+    --main-title-hue-right: 30;
   }
 }
