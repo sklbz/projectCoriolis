@@ -1,4 +1,4 @@
-/* THIS FILE IS JUST FOR EXAMPLES, DELETE IT IF YOU DON'T NEED IT */
+/* 
 
 body {
   background: var(--qwik-dark-background);
@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
 }
 
-/* HEADINGS ------------------------------------- */
+// HEADINGS ------------------------------------- 
 h1,
 h2,
 h3 {
@@ -47,7 +47,7 @@ h3 {
   }
 }
 
-/* TAGS ----------------------------------------- */
+// TAGS ----------------------------------------- 
 a {
   text-decoration: none;
   color: var(--qwik-light-blue);
@@ -64,7 +64,7 @@ ul {
   padding-left: 20px;
 }
 
-/* CONTAINER ------------------------------------ */
+//  CONTAINER ------------------------------------ 
 .container {
   margin: 0 auto;
   padding: 30px 40px;
@@ -79,9 +79,7 @@ ul {
 .container.container-center {
   text-align: center;
 }
-.container.container-flex {
-  /* does nothing on mobile */
-}
+
 .container.container-spacing-xl {
   padding: 50px 40px;
 }
@@ -100,7 +98,7 @@ ul {
   }
 }
 
-/* BUTTONS -------------------------------------- */
+// BUTTONS -------------------------------------- 
 a.button,
 button {
   background: var(--qwik-light-blue);
@@ -129,4 +127,4 @@ button.button-small {
     font-size: 1rem;
     padding: 23px 35px;
   }
-}
+} */
