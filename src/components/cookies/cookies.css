@@ -7,6 +7,7 @@
   justify-content: center;
   width: 100vw;
   height: calc(var(--modal-height) + 30px);
+  z-index: 1000;
 }
 
 .cookie {

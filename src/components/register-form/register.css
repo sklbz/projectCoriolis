@@ -1,5 +1,22 @@
 .wrapper {
-  height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - var(--footer-height) - var(--header-height));
+  backdrop-filter: blur(var(--backdrop-blur));
+  z-index: 50;
+}
+
+form {
+  border: 0.1rem solid black;
+  padding: 2rem;
+  display: grid;
+  place-content: center;
+  z-index: 100;
+}
+
+body {
   overflow: hidden;
 }

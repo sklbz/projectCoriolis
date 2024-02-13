@@ -92,6 +92,10 @@ ul {
   }
 }
 
+footer > .container.bottom-center {
+  padding-bottom: 0;
+}
+
 /* BUTTONS -------------------------------------- */
 a.button,
 button {

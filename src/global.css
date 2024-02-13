@@ -17,6 +17,9 @@
   --qwik-dark-text: #ffffff;
   --pp-dark-blue: #003087;
   --pp-light-blue: #0070E0;
+  --header-height: 172.5px;
+  --footer-height: 50px;
+  --backdrop-blur: 1rem;
 }
 
 html {
@@ -35,6 +38,14 @@ body {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
+}
+
+header {
+  height: var(--header-height);
+}
+
+footer {
+  height: var(--footer-height);
 }
 
 .fira-mono-regular {
