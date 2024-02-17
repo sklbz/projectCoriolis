@@ -39,3 +39,7 @@
   margin: 3px;
   width: 100%;
 }
+
+p {
+  margin-left: .5rem;
+}

@@ -8,6 +8,9 @@ section {
   height: 3.5rem;
   background-clip: text;
   color: transparent;
+  span {
+    font-weight: 700;
+  }
 }
 
 @media screen and (min-width: 768px) {
