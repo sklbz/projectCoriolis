@@ -7,7 +7,7 @@ import { $, useStore, useTask$ } from "@builder.io/qwik";
     useTask$(() => {
       try {
         // Get from local storage by key
-        const item = window.localStorage.getItem(key);
+        const item: any = window.localStorage.getItem(key);
         // Parse stored json or if none return initialState
         store.value = item ? JSON.parse(item) : initialState;
       } catch (error) {
