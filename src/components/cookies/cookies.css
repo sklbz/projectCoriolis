@@ -31,13 +31,21 @@
   justify-content: space-evenly;
   align-items: center;
   width: 8vw;
-}
-
-.btns > button {
-  font-size: .8em;
-  padding: 5px;
-  margin: 3px;
-  width: 100%;
+  button {
+    font-size: .8em;
+    padding: 5px;
+    margin: 3px;
+    width: 100%;
+    background: transparent;
+    transition: all 500ms ease;
+    outline: 1px solid var(--qwik-light-blue);
+    box-shadow: 0 0 10px var(--qwik-light-blue);
+  }
+  button:hover {
+    background: var(--color);
+    outline: transparent;
+    box-shadow: 100px 5px var(--qwik-light-blue);
+  }
 }
 
 p {
