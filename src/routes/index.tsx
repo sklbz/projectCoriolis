@@ -14,7 +14,7 @@ export default component$(() => {
     <>
       <h1 class="main-title">Money Transfer. Faster. More <span>secure</span>.</h1>
       <section>
-
+      
       </section>
       <button onClick$={() => {
           localStorage.setItem("theme", "hello")

@@ -7,10 +7,12 @@
   justify-content: center;
   width: 100vw;
   height: calc(var(--modal-height) + 30px);
+  border: 0;
   z-index: 1000;
 }
 
 .cookie {
+  border: 0;
   box-shadow: 0 0 5px 5px #000;
   width: 80vw;
   height: var(--modal-height);
@@ -24,6 +26,7 @@
 }
 
 .btns {
+  --importance: 1;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -39,12 +42,14 @@
     background: transparent;
     transition: all 500ms ease;
     outline: 1px solid var(--qwik-light-blue);
-    box-shadow: 0 0 10px var(--qwik-light-blue);
+    box-shadow: 0 0 calc(10px * var(--importance)) var(--qwik-light-blue);
+    color: color-mix(in srgb, color-mix(in srgb, var(--qwik-light-blue), var(--color) 70%) 60%, white);
   }
   button:hover {
-    background: var(--color);
+    background: color-mix(in srgb, var(--color) 70%, var(--qwik-dark-blue));
     outline: transparent;
-    box-shadow: 100px 5px var(--qwik-light-blue);
+    box-shadow: var(--color);
+    color: white;
   }
 }
 
