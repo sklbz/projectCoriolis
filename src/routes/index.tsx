@@ -12,12 +12,12 @@ export default component$(() => {
 /*   useFirestore(); */
   let initialMoney;
   try {
-    initialMoney = window?.localStorage.getItem("money") || 208147;
+    initialMoney = window.localStorage.getItem("money") || 208147;
   } catch {
     console.log("window is not defined\n");
+    initialMoney = 208147;
   }
   
-
   const [money, setMoney$] = useLocalStorage("money", initialMoney);
 
   const extraMoney = Math.ceil(Math.random() * 10**Math.floor(Math.random() * 3));
