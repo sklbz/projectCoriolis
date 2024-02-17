@@ -9,6 +9,7 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  margin-bottom: 20vh;
   span {
     font-weight: 700;
   }
@@ -44,5 +45,19 @@ section {
     --color-2: hsla(30, 100%, 50%, 1);
     --main-title-hue-left: 357;
     --main-title-hue-right: 30;
+  }
+}
+
+.money-transferred {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    text-align: center;
+  }
+  span {
+    color: #501050;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
   }
 }
