@@ -1,7 +1,3 @@
-section {
-  min-height: 10vh;
-}
-
 .main-title {
   //animation: color-change 10s infinite ease;
   background: linear-gradient(to right, hsl(var(--main-title-hue-left), 100%, 50%), hsl(var(--main-title-hue-right), 100%, 50%));

@@ -48,6 +48,12 @@ header {
 
 main {
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  section {
+    min-height: 15vh;
+    padding: 3vh;
+    display: grid;
+    place-content: center;
+  }
 }
 
 footer {

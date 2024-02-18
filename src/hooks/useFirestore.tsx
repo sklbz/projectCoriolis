@@ -10,6 +10,6 @@ export async function useFirestore(/*path: String*/)/*: [any, QRL<(value: any) =
     });
     console.log(`Document written with name: ${docRef.id}`);
   } catch (e) {
-    console.error("Error adding document: ", e);
+    //console.error("Error adding document: ", e);
   }
 }

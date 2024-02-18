@@ -25,7 +25,7 @@ import { $, useStore, useTask$/* , useVisibleTask$ */ } from "@builder.io/qwik";
         store.value = item ? JSON.parse(item) : initialState;
       } catch (error) {
         // If error also return initialState
-        console.log(error);
+        //console.log(error);
         store.value = initialState;
       }
     });
@@ -40,7 +40,7 @@ import { $, useStore, useTask$/* , useVisibleTask$ */ } from "@builder.io/qwik";
         }
       } catch (error) {
         // A more advanced implementation would handle the error case
-        console.log(error);
+        //console.log(error);
       }
     });
 
