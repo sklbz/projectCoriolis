@@ -1,6 +1,5 @@
 .wrapper {
   width: 100vw;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,7 +8,7 @@
   z-index: 50;
 }
 
-form {
+.form {
   border: 0.1rem solid black;
   padding: 2rem;
   display: grid;

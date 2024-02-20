@@ -1,13 +1,13 @@
-import { component$, useStyles$ } from "@builder.io/qwik";
-import style from "./register.css?inline";
+import { component$, Slot } from "@builder.io/qwik";
+import { Form } from "@builder.io/qwik-city";
+import style from "./register.module.css";
 
 export const RegisterForm = component$(() => {
-  useStyles$(style);
   return (
-    <section class="wrapper">
-      <form action="">
-        <input type="text" />
-      </form>
+    <section class={style.wrapper}>
+      <Form class={[style.form, "container"]}>
+        <Slot/>
+      </Form>   
     </section>
   );
 });

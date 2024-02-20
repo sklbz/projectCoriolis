@@ -1,4 +1,4 @@
-.cookie-container{
+.cookie-container {
   --modal-height: 70px;
   position: fixed;
   bottom: 0;
@@ -35,7 +35,7 @@
   align-items: center;
   width: 8vw;
   button {
-    font-size: .8em;
+    font-size: 0.8em;
     padding: 5px;
     margin: 3px;
     width: 100%;
@@ -43,7 +43,11 @@
     transition: all 500ms ease;
     outline: 1px solid var(--qwik-light-blue);
     box-shadow: 0 0 calc(10px * var(--importance)) var(--qwik-light-blue);
-    color: color-mix(in srgb, color-mix(in srgb, var(--qwik-light-blue), var(--color) 70%) 60%, white);
+    color: color-mix(
+      in srgb,
+      color-mix(in srgb, var(--qwik-light-blue), var(--color) 70%) 60%,
+      white
+    );
   }
   button:hover {
     background: color-mix(in srgb, var(--color) 70%, var(--qwik-dark-blue));
@@ -54,5 +58,5 @@
 }
 
 p {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
