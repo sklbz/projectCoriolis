@@ -8,7 +8,7 @@ import {
   Form,
 } from "@builder.io/qwik-city";
 import style from "./index.css?inline";
-import { useLocalStorage } from "~/hooks/useLocalStorage";
+/* import { useLocalStorage } from "~/hooks/useLocalStorage"; */
 /* import { useFirestore } from "~/hooks/useFirestore"; */
 
 export const money = 208147;
@@ -70,7 +70,7 @@ export const useAddToMoneyAction = routeAction$(() => {
 
 export default component$(() => {
   useStylesScoped$(style);
-  const [value, setValue$] = useLocalStorage("name", "Guest");
+  /* const [value, setValue$] = useLocalStorage("name", "Guest"); */
 
   const addMoney = useAddToMoneyAction();
   const money = useMoneyLoader();
@@ -129,20 +129,7 @@ export default component$(() => {
           </button>
         </Form>
         {/* ----------------------------------------------------------------- */}
-      </section>
-      <button
-        onClick$={() => {
-          localStorage.setItem("theme", "hello");
-        }}
-      >
-        click
-      </button>
-      <input
-        type="button"
-        value="Reload Page"
-        onClick$={() => window.location.reload()}
-      />
-      <button onClick$={() => setValue$("hi")}>{value.value}</button>
+      </section>   
     </>
   );
 });
