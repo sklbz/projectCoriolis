@@ -36,6 +36,12 @@ export default component$(() => {
               Tutorials
             </a>
           </li>
+          <li>
+            <a href="/login/">Log In</a>
+          </li>
+          <li>
+            <a href="/signin/"> Sign Up</a>
+          </li>
         </ul>
       </div>
     </header>

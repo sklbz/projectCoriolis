@@ -5,9 +5,7 @@ import { type DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
   useStylesScoped$(style);
-  return (
-    <RegisterForm></RegisterForm>
-  );
+  return <RegisterForm></RegisterForm>;
 });
 
 export const head: DocumentHead = {

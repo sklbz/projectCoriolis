@@ -6,8 +6,8 @@ export const RegisterForm = component$(() => {
   return (
     <section class={style.wrapper}>
       <Form class={[style.form, "container"]}>
-        <Slot/>
-      </Form>   
+        <Slot />
+      </Form>
     </section>
   );
 });

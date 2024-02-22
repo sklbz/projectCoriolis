@@ -43,7 +43,7 @@ body {
 
 body::-webkit-scrollbar {
   background-color: transparent;
-  width: .25rem;
+  width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {
