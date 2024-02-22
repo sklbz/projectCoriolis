@@ -37,9 +37,22 @@ body {
   background: var(--qwik-dark-background);
   color: var(--qwik-dark-text);
   line-height: inherit;
-  overflow-y: hidden;
   padding: 0;
   margin: 0;
+}
+
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: .25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6649b8;
+  border-radius: 50vmin;
 }
 
 header {

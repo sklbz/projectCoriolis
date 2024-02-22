@@ -15,7 +15,3 @@
   place-content: center;
   z-index: 100;
 }
-
-body {
-  overflow: hidden;
-}
