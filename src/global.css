@@ -22,6 +22,8 @@
   --backdrop-blur: 1rem;
   --main-title-hue-left: 200;
   --main-title-hue-right: 300;
+  scrollbar-width: thin;
+  scrollbar-color: #6649b8 transparent;
 }
 
 html {
@@ -39,8 +41,6 @@ body {
   line-height: inherit;
   padding: 0;
   margin: 0;
-  scrollbar-width: thin;
-  scrollbar-color: #6649b8 transparent;
 }
 
 body::-webkit-scrollbar {
